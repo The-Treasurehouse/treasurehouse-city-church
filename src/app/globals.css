@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #16233c;
+  --muted: #5b6472;
+  --card: #ffffff;
+  --surface: #f4f6f9;
+  --border: #e3e7ee;
+  --navy: #101b30;
+  --navy-foreground: #ffffff;
+  --accent: #ffe1a8;
+  --accent-dark: #f2cf8a;
+  --accent-foreground: #101b30;
+  --accent-ink: #8a6414;
+  --orange: #ef8b3f;
+  --success: #1f8a4c;
+  --warning: #b7791f;
+  --danger: #c0392b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-ink: var(--accent-ink);
+  --color-orange: var(--orange);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-bricolage);
+  --font-serif: var(--font-bricolage);
+  --font-heading: var(--font-bricolage);
+  --font-mono: var(--font-dm-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(0.6em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
